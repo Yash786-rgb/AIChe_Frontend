@@ -1,4 +1,4 @@
 # gallery webapp
 
-![header](./images/ss1.png)
-![mobile](./images/ss2.png)
+![header](./src/images/ss1.png)
+![mobile](./src/images/ss2.png)
