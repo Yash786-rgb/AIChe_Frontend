@@ -7,18 +7,42 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-nav {
-    position: relative;
+
+.navbar {
+  display: flex;
+}
+
+
+.mobileheader {
+  display: none;
+}
+
+.navlinks {
+  width: fit-content;
+  margin: auto;
+}
+
+.navlinks ul {
+    /* position: relative;
     margin: 20px auto 0;
     width: 60%;
     height: 50px;
     background-color: white;
     border-color: black;
     font-size: 0;
-    
+     */
+
+     margin: 0;
+     padding: 0;
+     display: flex;
 }
 
-nav {
+.navlinks li {
+  list-style: none;
+}
+
+
+/* nav {
   font-size: 20px;
   font-weight: 900;
   text-transform: uppercase;
@@ -29,11 +53,115 @@ nav {
   z-index: 1;
   display: inline-block;
   text-align: center;
+} */
+
+
+
+.navlinks li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0); 
+  margin: 38px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.navlinks li:hover {
+  background-color: rgb(228, 205, 205);
+  border-radius: 8px;
+}
+
+
+.togglebutton {
+  position: absolute;
+  top:.75rem; 
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:33px;
+  height: 25px;
+}
+
+
+.togglebutton .bar {
+  height: 4px;
+  width: 36px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
 
 
-a:nth-child(1) {
+
+@media only screen and (max-width: 700px) {
+
+
+  .mobileheader {
+    display: inline;
+    margin: 5px 10px;
+    font-weight: 900;
+    text-decoration: none;
+    color:brown;
+  }
+
+  .mobileheader a {
+    color: brown;
+  }
+
+  .togglebutton {
+    display: flex;
+  }
+
+  .navlinks {
+    display: none;
+  } 
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(228, 210, 210);
+  }
+
+  .navlinks{
+    width: 100%;
+  }
+
+
+  .navlinks ul {
+     flex-direction: column;
+     line-height: 30px;
+  }
+
+  .navlinks li:hover {
+    background-color: rgb(216, 188, 188);
+    border-radius: 0;
+  }
+
+  .navlinks.active {
+    display:flex;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* a:nth-child(1) {
   width: 100px;
 }
 
@@ -56,5 +184,5 @@ a:nth-child(4) {
 
 a:nth-child(5) {
   width: 150px;
-}
+} */
 
