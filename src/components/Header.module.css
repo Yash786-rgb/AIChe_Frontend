@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 170px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: none;
+    }
+  }
