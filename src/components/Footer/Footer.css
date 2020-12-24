@@ -20,7 +20,7 @@
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 35%;
 	/* padding-left: 50px; */
 }
 
@@ -49,13 +49,13 @@
 	color:  #8f9296;
 	font-size: 14px;
 	font-weight: normal;
-	margin: 0;
+	margin: 7px;
 }
 
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 35%;
+	width: 40%;
 }
 
 .footer-distributed .footer-center i{

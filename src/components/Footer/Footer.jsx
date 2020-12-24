@@ -1,6 +1,6 @@
 import React from "react";
 import './Footer.css';
-import logo from '../images/aichelogo.png';
+import logo from '../images/AIChe_2.png';
 export default class Footer extends React.Component{
     render(){
         return(
