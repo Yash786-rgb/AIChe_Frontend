@@ -1,20 +1,22 @@
 import React, { Component } from 'react'
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 // import hamburgerScript from './hooks/hamburgerScript'
 // import usehamburgerScript from './hooks/usehamburgerScript'
-//import { Navbar, Nav, NavDropdown, NavLink } from 'react-bootstrap'
-import styles from './Navbar.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
+import { Navbar, Nav, NavDropdown, NavLink } from 'react-bootstrap'
+
+// import styles from './Navbar.module.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
+
 
 
 class NavigationBar extends Component {
-    state = { clicked: false }
+    // state = { clicked: false }
 
 
-    handleTap = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
+    // handleTap = () => {
+    //     this.setState({ clicked: !this.state.clicked })
+    // }
 
 
 
@@ -22,47 +24,37 @@ class NavigationBar extends Component {
     render() {
         return (
             <div>
-
-                <div className={styles.navbar}>
-
-                    <h2 className={styles.mobileheader}><a href="/">AIChE-IITR</a></h2>
-                    <div className={styles.menuIcon} onClick={this.handleTap}>
-                        {/* <i className={this.state.clicked ? 'styles.fas fa-times' : 'styles.fas fa-bars'}></i> */}
-                        {this.state.clicked ?
-                            <div className={styles.togglebuttonClose}>
-                                <FontAwesomeIcon icon={faTimes} />
-                            </div> :
-                            <div className={styles.togglebutton}>
-                                {/* <span className={styles.bar}></span>
-                                <span className={styles.bar}></span>
-                                <span className={styles.bar}></span> */}
-                                <FontAwesomeIcon icon={faBars} />
-                            </div>
-                        }
-                    </div>
-                    {this.state.clicked ?
-                        <div className={styles.navlinksm}>
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/blogs">Blogs</a></li>
-                                <li><a href="/competitions">Competitions</a></li>
-                                <li><a href="/team">Team</a></li>
-                                <li><a href="/contact-us">Contact Us</a></li>
-                                <li><a href="/login">Login</a></li>
-                            </ul>
-                        </div>
-                        : null}
-                    <div className={styles.navlinks}>
-                        <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/blogs">Blogs</a></li>
-                            <li><a href="/competitions">Competitions</a></li>
-                            <li><a href="/team">Team</a></li>
-                            <li><a href="/contact-us">Contact Us</a></li>
-                            <li><a href="/login">Login</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
+                    <Navbar.Brand href="#home">
+                        <img
+                            alt=""
+                            src=""
+                            width="30"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />{' '}
+                    AIChE IITR</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mr-auto" style={{ textAlign: "left" }}>
+                            <Nav.Link href="#features">Features</Nav.Link>
+                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                            <NavDropdown title="Dropdown" id="collasible-nav-dropdown" style={{ textAlign: "left" }}>
+                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
+                        <Nav style={{ textAlign: "left" }}>
+                            <Nav.Link href="#deets">More deets</Nav.Link>
+                            <Nav.Link eventKey={2} href="#memes">
+                                Dank memes
+      </Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
             </div>
         )
     }

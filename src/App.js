@@ -10,16 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <div className="App">
-      <br></br>
       <Router>
-
-        <Header />
         <Navbar />
+        <Header />
         {/* <Navbar /> */}
         {/* <Blogs /> */}
         {/* <Cards /> */}
         <Blogs />
-        <SpacingGrid />
+        {/* <SpacingGrid />  */}
       </Router>
     </div>
   );
