@@ -22,7 +22,27 @@
   margin: auto;
 }
 
+.navlinksm {
+  width: fit-content;
+  margin: auto;
+  display: none;
+}
 .navlinks ul {
+    /* position: relative;
+    margin: 20px auto 0;
+    width: 60%;
+    height: 50px;
+    background-color: white;
+    border-color: black;
+    font-size: 0;
+     */
+
+     margin: 0;
+     padding: 0;
+     display: flex;
+}
+
+.navlinksm ul {
     /* position: relative;
     margin: 20px auto 0;
     width: 60%;
@@ -40,7 +60,9 @@
 .navlinks li {
   list-style: none;
 }
-
+.navlinksm li {
+  list-style: none;
+}
 
 /* nav {
   font-size: 20px;
@@ -55,9 +77,23 @@
   text-align: center;
 } */
 
+.fa-bars {
+    color: #fff;
+}
 
+.fa-react {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
 
 .navlinks li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0); 
+  margin: 38px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.navlinksm li a {
   text-decoration: none;
   color: rgb(0, 0, 0); 
   margin: 38px;
@@ -70,26 +106,45 @@
   border-radius: 8px;
 }
 
+.navlinksm li:hover {
+  background-color: rgb(228, 205, 205);
+  border-radius: 8px;
+}
 
 .togglebutton {
   position: absolute;
-  top:.75rem; 
+  top:.35rem; 
   right: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width:33px;
   height: 25px;
+  font-weight: 900;
+  font-size: 35px;
 }
 
 
-.togglebutton .bar {
+.togglebuttonClose {
+  position: absolute;
+  top:0.25rem; 
+  right: .50rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:33px;
+  height: 20px; 
+  font-weight: 900;
+  font-size: 35px;
+}
+
+/* .togglebutton .bar {
   height: 4px;
   width: 36px;
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
 }
-
+ */
 
 
 
@@ -111,9 +166,17 @@
   .togglebutton {
     display: flex;
   }
+  .togglebuttonClose {
+    display: flex;
+  }
 
   .navlinks {
     display: none;
+    width: 100%;
+  } 
+   .navlinksm {
+    display: flex;
+    width: 100%;
   } 
 
   .navbar {
@@ -122,22 +185,37 @@
     background-color: rgb(228, 210, 210);
   }
 
-  .navlinks{
-    width: 100%;
-  }
+  .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
 
 
   .navlinks ul {
      flex-direction: column;
      line-height: 30px;
+     width:100%;
   }
+  .navlinksm ul {
+     flex-direction: column;
+     line-height: 30px;
+     width:100%;
+  }
+
 
   .navlinks li:hover {
     background-color: rgb(216, 188, 188);
     border-radius: 0;
   }
+  .navlinksm li:hover {
+    background-color: rgb(216, 188, 188);
+    border-radius: 0;
+  }
 
   .navlinks.active {
+    display:flex;
+  }
+  .navlinksm.active {
     display:flex;
   }
   

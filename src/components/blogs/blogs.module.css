@@ -1,0 +1,10 @@
+.container {
+    width: 97%;
+    border-radius: 8px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.post {
+    margin: 15px;
+}

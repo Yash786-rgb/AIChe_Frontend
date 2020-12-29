@@ -1,0 +1,18 @@
+.container {
+  margin-top: 20px;
+  font-weight: 600;
+    max-width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background-color: rgb(255, 240, 240);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
