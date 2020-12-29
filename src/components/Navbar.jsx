@@ -22,9 +22,7 @@ class NavigationBar extends Component {
     render() {
         return (
             <div>
-                {/* <Helmet>
-                <script src='./hooks/hamburgerScript'></script>
-            </Helmet> */}
+
                 <div className={styles.navbar}>
 
                     <h2 className={styles.mobileheader}><a href="/">AIChE-IITR</a></h2>

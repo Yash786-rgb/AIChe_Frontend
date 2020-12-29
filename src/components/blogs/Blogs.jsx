@@ -3,27 +3,50 @@ import { blogPosts } from './posts'
 import Container from 'react-bootstrap/Container'
 import styles from './blogs.module.css'
 import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+import { Row, Col } from 'react-bootstrap'
 
 class Blogs extends Component {
     render() {
         return (
             <div >
-                <h2><b>Our Blogs</b></h2>
+                <h2>
+                    <b>Our Blogs</b>
+                </h2>
 
-                <Card style={{ width: "18 rem" }}>
-                    {blogPosts.map((post, index) => {
-                        return (
-                            <div className={styles.post}>
-                                {/* <li><a className={post.title} href={post.url}>
-                                {`${post.title}`}
-                            </a></li> */}
-                                <a href={`${post.url}`}>{`${post.title}`}</a>
-                                {`${post.summary}`}
-                                <hr></hr>
-                            </div>
-                        )
-                    })}
-                </Card>
+                {blogPosts.map((post, index) => {
+                    return (
+                        <div>
+
+                            <Card style={{ width: '18rem' }}>
+                                <Card.Body>
+
+                                    <Card.Title>{`${post.title}`}</Card.Title>
+                                    <Card.Text>
+                                        {`${post.summary}`}
+                                    </Card.Text>
+                                    <a href={`${post.url}`}><Button variant="primary">click</Button></a>
+                                </Card.Body>
+                            </Card>
+
+                        </div>
+                    )
+                })}
+
+
+
+                <Container>
+                    <Row>
+                        <Col>1 of 3</Col>
+                        <Col >2 of 3 (wider)</Col>
+                        <Col>3 of 3</Col>
+                    </Row>
+                    <Row>
+                        <Col>1 of 3</Col>
+                        <Col xs={5}>2 of 3 (wider)</Col>
+                        <Col>3 of 3</Col>
+                    </Row>
+                </Container>
                 {/* <Grid /> */}
             </div>
         )

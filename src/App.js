@@ -12,8 +12,9 @@ function App() {
     <div className="App">
       <br></br>
       <Router>
-        <Navbar />
+
         <Header />
+        <Navbar />
         {/* <Navbar /> */}
         {/* <Blogs /> */}
         {/* <Cards /> */}
