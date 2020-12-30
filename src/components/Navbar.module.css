@@ -64,6 +64,24 @@
   list-style: none;
 }
 
+
+.mainnav {
+  color: rgba(255,255,255,.5);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.mainnav:hover{
+  text-decoration: none;
+  color: rgb(224, 216, 216);
+  font-weight: 900;
+}
+
+.mainnavactive {
+  color:rgb(255, 255, 255);
+  font-weight: 900;
+}
+
 /* nav {
   font-size: 20px;
   font-weight: 900;
