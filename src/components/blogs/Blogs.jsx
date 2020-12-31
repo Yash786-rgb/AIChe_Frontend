@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { blogPosts } from './posts'
-import styles from './blogs.module.css'
+import './blogs.css'
 
 
 class Blogs extends Component {
@@ -46,28 +46,137 @@ class Blogs extends Component {
 
 
             <div>
-                <h1 className={styles.heading}>Blogs</h1>
+                <h1 className="heading">Blogs</h1>
+                <div id="cards_landscape_wrap-2">
 
-                <div className={styles.container}>
-                    <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                        <a href="">
-                            <div className={styles.cardflyer}>
-                                <div className={styles.textbox}>
-                                    <div className={styles.imagebox}>
-                                        <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+                    {/* 1st */}
+                    <div className="container">
+
+                        <div className="row" style={{ margin: "auto" }}>
+                            <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <a href="">
+                                    <div className="card-flyer">
+                                        <div className="text-box">
+                                            <div className="image-box">
+                                                <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+                                            </div>
+                                            <div className="text-container">
+                                                <h6>Title 01</h6>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className={styles.textcontainer}>
-                                        <h6>Title 01</h6>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
+
+                            <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <a href="">
+                                    <div className="card-flyer">
+                                        <div className="text-box">
+                                            <div className="image-box">
+                                                <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+                                            </div>
+                                            <div className="text-container">
+                                                <h6>Title 01</h6>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <a href="">
+                                    <div className="card-flyer">
+                                        <div className="text-box">
+                                            <div className="image-box">
+                                                <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+                                            </div>
+                                            <div className="text-container">
+                                                <h6>Title 01</h6>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <a href="">
+                                    <div className="card-flyer">
+                                        <div className="text-box">
+                                            <div className="image-box">
+                                                <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+                                            </div>
+                                            <div className="text-container">
+                                                <h6>Title 01</h6>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <a href="">
+                                    <div className="card-flyer">
+                                        <div className="text-box">
+                                            <div className="image-box">
+                                                <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+                                            </div>
+                                            <div className="text-container">
+                                                <h6>Title 01</h6>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <a href="">
+                                    <div className="card-flyer">
+                                        <div className="text-box">
+                                            <div className="image-box">
+                                                <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+                                            </div>
+                                            <div className="text-container">
+                                                <h6>Title 01</h6>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <a href="">
+                                    <div className="card-flyer">
+                                        <div className="text-box">
+                                            <div className="image-box">
+                                                <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+                                            </div>
+                                            <div className="text-container">
+                                                <h6>Title 01</h6>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
                     </div>
+
+                    {/* 2nd */}
+
                 </div>
 
 
-            </div>
+            </div >
         )
     }
 }
