@@ -4,12 +4,12 @@ export default class Navbar extends React.Component{
     render(){
         return(
           <div className = "Navbar">
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand" href="/"
+            <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <a className="navbar-brand" href="/"
             > AIChe IIT Roorkee </a
             >
             <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -17,21 +17,21 @@ export default class Navbar extends React.Component{
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item hoverable">
-            <a class="nav-link" href="/one">one</a>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ml-auto">
+            <li className="nav-item hoverable">
+            <a className="nav-link" href="/one">one</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/two">two</a>
+          <li className="nav-item">
+            <a className="nav-link" href="/two">two</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/three">three</a>
+          <li className="nav-item">
+            <a className="nav-link" href="/three">three</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/four">four</a>
+          <li className="nav-item">
+            <a className="nav-link" href="/four">four</a>
           </li>             
             </ul>
         </div>

@@ -1,0 +1,93 @@
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.accordion-block{
+    position: relative;
+}
+.accordion-block .accordion-image {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.accordion-block .accordion-content {
+    color: #fff;
+    height: 220px;
+    /* padding: 5px 10px 0 0; */
+}
+.codess-blue {
+    background-color: #00baf0;
+}
+.codess-purple {
+    background-color: #984f93;
+}
+.codess-dark-blue {
+    background-color: #4668c3;
+}
+h3 {
+    margin-top: 0;
+    font-family: "Segoe UI Regular";
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+p {
+    font-family: "Segoe UI Regular";
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    display: none;
+    color: white !important;
+}
+
+.accordion-block .plus{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    background: no-repeat top left;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+@media screen and (max-width: 767px){
+    .accordion-block .accordion-content {
+        padding: 15px;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    p{
+        display: block;
+    }
+    .accordion-block .accordion-image{
+        display: none;
+    }
+}
+@media screen and (max-width: 991px){
+    p{
+        display: block;
+    }
+}
+@media screen and (min-width: 768px){
+    .accordion-block .accordion-content {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    
+}
