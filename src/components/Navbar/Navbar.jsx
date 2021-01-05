@@ -14,42 +14,7 @@ class NavigationBar extends Component {
             "Team",
             "Contact Us"
         ]
-        // return (
-        //     <div>
-        //         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
-        //             <Navbar.Brand>
-        //                 <img
-        //                     alt=""
-        //                     src={aiche}
-        //                     width="30"
-        //                     height="30"
-        //                     className="d-inline-block align-top"
-        //                 />{' '}
-        //                 <NavLink exact to="/" className={style.mainnav} >AIChE IITR</NavLink>
-        //             </Navbar.Brand>
-        //             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        //             <Navbar.Collapse id="responsive-navbar-nav">
-        //                 <Nav className="mr-auto" >
-        //                     {/* <Nav.Link><NavLink exact to="/blogs" className={style.mainnav} activeClassName={style.mainnavactive}>Blogs</NavLink></Nav.Link>
-        //                     <Nav.Link><NavLink exact to="/pricing" className={style.mainnav} activeClassName={style.mainnavactive}>About</NavLink></Nav.Link>
-        //                     <Nav.Link><NavLink exact to="/competitions" className={style.mainnav} activeClassName={style.mainnavactive}>Competitions</NavLink></Nav.Link>
-        //                     <Nav.Link><NavLink exact to="/contact-us" className={style.mainnav} activeClassName={style.mainnavactive}>Contact Us</NavLink></Nav.Link> */}
 
-        //                 </Nav>
-        //                 <Nav style={{ textAlign: "left" }}>
-
-        //                     <Nav.Link><NavLink exact to="/home" className={style.mainnav} activeClassName={style.mainnavactive}>Home</NavLink></Nav.Link>
-        //                     <Nav.Link><NavLink exact to="/blogs" className={style.mainnav} activeClassName={style.mainnavactive}>Blogs</NavLink></Nav.Link>
-        //                     <Nav.Link><NavLink exact to="/competitions" className={style.mainnav} activeClassName={style.mainnavactive}>Competitions</NavLink></Nav.Link>
-
-        //                     <Nav.Link><NavLink exact to="/team" className={style.mainnav} activeClassName={style.mainnavactive}>Team</NavLink></Nav.Link>
-        //                     <Nav.Link><NavLink exact to="/contact-us" className={style.mainnav} activeClassName={style.mainnavactive}>Contact Us</NavLink></Nav.Link>
-
-        //                 </Nav>
-        //             </Navbar.Collapse>
-        //         </Navbar>
-        //     </div>
-        // )
 
         return (
             <div className="Navbar">
@@ -63,7 +28,7 @@ class NavigationBar extends Component {
                             height="30"
                             className="d-inline-block align-top"
                         />
-                    &nbsp;AIChe IIT Roorkee </a
+                    &nbsp;AIChE IIT Roorkee </a
                     >
                     <button
                         class="navbar-toggler"
@@ -77,7 +42,7 @@ class NavigationBar extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ml-auto">
+                        <ul className="navbar-nav ml-auto" >
                             {routes.map(r => {
                                 if (this.props.active == r) {
                                     return (
@@ -95,11 +60,12 @@ class NavigationBar extends Component {
                                     )
                                 }
                             })}
-
                         </ul>
                     </div>
-                </nav>
-            </div>
+                </nav >
+
+
+            </div >
         )
     }
 }

@@ -16,12 +16,16 @@
     margin: auto;
 }
 
+
+h6{
+  text-align: center;
+}
 .heading {
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 #cards_landscape_wrap-2{
-  text-align: center;
+  /* text-align: center; */
   background: #F7F7F7;
 }
 #cards_landscape_wrap-2 .container{

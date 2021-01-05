@@ -28,9 +28,9 @@ class Blogs extends Component {
                                             <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
                                         </div>
                                         <div className="text-container">
-                                            <h6>Title 01</h6>
+                                            <h6>A planned explosion failed at the Saudi petrochemical plant!</h6>
 
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy...<a className="readmore" href='blog1'>read more</a></p>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy...<a className="readmore" href='/github.com'>read more</a></p>
                                             <p>By - Author</p>
                                             <p>Date</p>
                                         </div>
